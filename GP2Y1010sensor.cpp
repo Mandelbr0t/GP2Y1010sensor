@@ -13,7 +13,7 @@ void GP2Y1010sensor::init(int LEDpin, int sensorPin, float K, int nAvg) {
 }
 
 
-int GP2Y1010sensor::read(float* density, float* mvolt) {
+void GP2Y1010sensor::read(float* density, float* mvolt) {
   _v0total = 0;
   _v0count = 0;
   for (int _v0count = 0; _v0count < _nAvg; _v0count++)
