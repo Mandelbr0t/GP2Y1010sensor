@@ -4,7 +4,7 @@
 class GP2Y1010sensor {
   public:
     GP2Y1010sensor();
-	void init(int LEDpin, int sensorPin, float K, int nAvg);
+    void init(int LEDpin, int sensorPin, float K, int nAvg);
     void read(float* density, float* mvolt);
     float val;
     float dens;
